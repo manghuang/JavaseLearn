@@ -1,0 +1,80 @@
+C:\Users\12555\IdeaProjects\JavaseLearn\src\com\whw\jvm\classfile>javap -v demo4.class
+Classfile /C:/Users/12555/IdeaProjects/JavaseLearn/src/com/whw/jvm/classfile/demo4.class
+  Last modified 2020-11-1; size 415 bytes
+  MD5 checksum be99f6bd34a924df6d9d53891021ef09
+  Compiled from "demo4.java"
+public class com.whw.jvm.classfile.demo4
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #4.#22         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#23         // com/whw/jvm/classfile/demo4.num:I
+   #3 = Class              #24            // com/whw/jvm/classfile/demo4
+   #4 = Class              #25            // java/lang/Object
+   #5 = Utf8               num
+   #6 = Utf8               I
+   #7 = Utf8               PI
+   #8 = Utf8               D
+   #9 = Utf8               ConstantValue
+  #10 = Double             3.1415926d
+  #12 = Utf8               <init>
+  #13 = Utf8               ()V
+  #14 = Utf8               Code
+  #15 = Utf8               LineNumberTable
+  #16 = Utf8               getNum
+  #17 = Utf8               ()I
+  #18 = Utf8               setNum
+  #19 = Utf8               (I)V
+  #20 = Utf8               SourceFile
+  #21 = Utf8               demo4.java
+  #22 = NameAndType        #12:#13        // "<init>":()V
+  #23 = NameAndType        #5:#6          // num:I
+  #24 = Utf8               com/whw/jvm/classfile/demo4
+  #25 = Utf8               java/lang/Object
+{
+  public static final double PI;
+    descriptor: D
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: double 3.1415926d
+
+  public com.whw.jvm.classfile.demo4();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_1
+         6: putfield      #2                  // Field num:I
+         9: return
+      LineNumberTable:
+        line 3: 0
+        line 5: 4
+
+  public int getNum();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #2                  // Field num:I
+         4: ireturn
+      LineNumberTable:
+        line 9: 0
+
+  public void setNum(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #2                  // Field num:I
+         5: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 5
+}
+SourceFile: "demo4.java"

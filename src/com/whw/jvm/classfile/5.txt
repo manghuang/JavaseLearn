@@ -1,0 +1,14 @@
+C:\Users\12555\IdeaProjects\JavaseLearn\src\com\whw\jvm\classfile>javap -s demo4.class
+Compiled from "demo4.java"
+public class com.whw.jvm.classfile.demo4 {
+  public static final double PI;
+    descriptor: D
+  public com.whw.jvm.classfile.demo4();
+    descriptor: ()V
+
+  public int getNum();
+    descriptor: ()I
+
+  public void setNum(int);
+    descriptor: (I)V
+}
