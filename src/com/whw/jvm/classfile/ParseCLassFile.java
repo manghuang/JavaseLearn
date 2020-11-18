@@ -359,9 +359,9 @@ public class ParseCLassFile {
         CONSTANT_MethodType_info(16, true, 3),
         CONSTANT_InvokeDynamic_info(18, true, 5);
 
-        private int tag;
-        private boolean isSolid;
-        private int length;
+        private  final int tag;
+        private final boolean isSolid;
+        private final int length;
 
         private CP_INFO(int tag, boolean isSolid, int length) {
             this.tag = tag;

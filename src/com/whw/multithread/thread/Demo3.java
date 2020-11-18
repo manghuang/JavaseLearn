@@ -18,9 +18,7 @@ public class Demo3 {
         Future<Integer> result = executorService.submit(new CallableImpl());
         try {
             System.out.println(result.get());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
         executorService.shutdown();
