@@ -1,4 +1,4 @@
-package com.whw.jvm.Syn;
+package com.whw.jvm.syn;
 
 public class SynTest1 {
 
